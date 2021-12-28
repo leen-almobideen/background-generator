@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+
+<body>
+
+
+
+<h1>Register</h1>
+<label for="name">name:</label>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="dbth">date of birth</label> 
+ <input type="date" id="dbth" name="dbth" onchange=check_date2aa(this.value) ><br><br>
+
+ <lable for="username">username</lable>
+ <input type="text" id="username" name="username" onchange="validateUsername(this.value)"><br><br>
+
+ <lable for="email">email</lable>
+ <input type="email" id="email" name="email" onchange="validateEmail(this.value)"><br><br>
+
+
+ <label for="pw">password</label>
+ <input type="password" id="pw" name="pw" onchange="validatepassword(this.value)"><br>
+ 
+ 
+ <label for="repw">repassword</label>
+ <input type="password" id="repw" name="repw" onchange=testPassword(this.value)><br>
+
+
+<script src="task.js"> </script>
+
+
+</body>
+</html>
